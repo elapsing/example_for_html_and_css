@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/frontpage.css" />
+    </style>
+</head>
+<body>
+  <div class="home">
+      <div class="content">
+          <div class="stars"></div>
+          <img class = "bgc" src="./img/imgs38.jpg"   height = "1050px" width = "100%" alt="">
+          <h3 class="title">林间小栈</h3>
+          <h3 class="titles">每个人心中都有一片森林</h3>
+          <img class="icon" src="./img/向下.png" alt="">
+          <div class='ribbon'>
+              <a href='./index.html'><span>首页</span></a>
+              <a href='./about.html'><span>关于</span></a>
+              <a href='./form.html'><span>联系我</span></a>
+
+          </div>
+
+      </div>
+      <div class="icons">
+          <div class="icons_items">
+              <img class="icons_items_imgs" src="./img/11.jpg" alt="">
+              <span>雅</span>
+          </div>
+          <div class="icons_items">
+              <img class="icons_items_imgs" src="./img/22.jpg" alt="">
+              <span>润</span>
+          </div>
+          <div class="icons_items">
+              <img class="icons_items_imgs" src="./img/33.jpg" alt="">
+              <span>静</span>
+          </div>
+          <div class="icons_items">
+              <img class="icons_items_imgs" src="./img/44.jpg" alt="">
+              <span>清</span>
+          </div>
+      </div>
+      <div class="introduce">
+          <div class="introduce_item">
+              <img class="introduce_item_img" src="./img/imgs15.jpg" alt="">
+              <span class="introduce_item_title">「远远去了的夏之音乐，翱翔于秋间，寻求它的旧垒。」</span>
+
+          </div>
+          <div class="introduce_item">
+
+              <span class="introduce_item_titles">「群树如表示大地的愿望似的，踮起脚来向天空窥望。」</span>
+              <img class="introduce_item_img" src="./img/imgs36.jpg" alt="">
+          </div>
+          <div class="introduce_item">
+              <img class="introduce_item_img" src="./img/imgs16.jpg" alt="">
+              <span class="introduce_item_title">「忧思在我的心里平静下去，正如暮色降临在寂静的山林中。」</span>
+          </div>
+          <div class="introduce_item">
+              <span class="introduce_item_titles">「枯竭的河床，并不感谢它的过去。」</span>
+              <img class="introduce_item_img" src="./img/imgs14.jpg" alt="">
+          </div>
+      </div>
+      <audio autoplay="autoplay" id="audio" loop="loop">
+              <source src="./video/music.mp3" type="audio/MP3">
+             
+      </audio>
+      <img class="music_img" src="./img/音乐.png" alt="">
+  </div>
+
+</body>
+<script>
+  let mucics = document.getElementById('audio')
+  mucics.play()
+  setTimeout(() => {
+    mucics.pause()
+    mucics.load()
+  }, 10) //绕过Chrome的禁止自动播放音频
+
+  document.body.addEventListener('mousemove', function() {
+      setTimeout(() => {
+          mucics.play();
+      }, 2000);
+  }, false);
+</script>
+
+</html>
